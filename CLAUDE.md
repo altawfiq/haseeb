@@ -6,6 +6,12 @@ Read `PROJECT_BRIEF.md` first — it holds the goal, page inventory and content 
 - **Content is frozen.** Never rewrite, shorten, "improve" or invent copy, metrics,
   testimonials or images. Only presentation (layout, type, color, 3D, motion) changes.
   When unsure whether something counts as content, keep it as-is and ask.
+- **Privacy:** real client names and logos are not authorised for public use. Never put a
+  client name or logo on a page, in alt text, metadata, JSON-LD or shipped images. The
+  anonymised wording is defined in `tools/content_edits.py`; the build fails if a name leaks.
+- **Evidence:** every figure must match its dashboard screenshot. Do not present clicks or
+  calls as appointments without booking records. Flag unverifiable claims; never invent
+  or substitute figures (including from older briefs).
 - **Preserve SEO markup**: titles, meta descriptions, canonicals, OG/Twitter tags,
   JSON-LD, heading levels, alt text, internal link targets and filenames.
 - Source content lives in `Muhammad Haseeb Sheikh _ Organic Growth & Healthcare SEO.zip`.
@@ -41,7 +47,8 @@ Read `PROJECT_BRIEF.md` first — it holds the goal, page inventory and content 
   (section order, stages, injections), `site/css/site.css`, `site/js/site.js` or
   `site/js/stage.js` — never hand-edit `site/*.html`. Rebuild: `python3 tools/build_site.py`.
 - After every rebuild run `python3 tools/verify_content.py` (must print ok for all pages:
-  text, headings, links, images/alt, forms, head/SEO tags and JSON-LD unchanged).
+  text, headings, links, images/alt, forms, head/SEO tags and JSON-LD unchanged apart from
+  the owner-directed edits in `tools/content_edits.py`, and no client names).
 - Browser checks: serve with `python3 -m http.server 8765 --directory site`, then
   `node tools/check_site.js` (writes screenshots + report.json to
   `design/implementation-screenshots/`). Playwright resolves from node_modules or `$PWPATH`

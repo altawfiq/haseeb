@@ -478,11 +478,11 @@ visible numbers ("01 Start where you are" … "11 Before you ask").
 | H1 "Your next customers are searching right now. I make sure they find you." with 7.65k → 48.2k | Night stage. Drawn-line loader becomes the hero's click curve; H1 resolves blur-to-sharp; the two figures sit either side of the curve. Primary CTA + "See the proof first". | Oryzo hero + loader |
 | "Who is Muhammad Haseeb Sheikh?" answer block | Kept as real text directly under the hero, in serif, visually quiet (it's the AI/answer-engine summary). | — |
 | 01 "What brings you here?" (two paths) | Two large split panels on Chart paper; each path's three bullets as a short list. | Buzz routing by need |
-| 02 "Work across ten healthcare, software and wholesale brands." | Static monochrome logo strip with sector tags; the note about direct vs in-house work stays beneath. | Buzz logo marquee (static) |
+| 02 "Work across ten healthcare, software and wholesale brands." | Heading and text only. The logo wall was removed on 2026-10-10: client names and logos are not authorised for public use. | (Buzz logo marquee, not used) |
 | 03 "A clinic that was invisible. Six months later, page one." | **Signature pinned chapter.** Search Console screenshot centre; the three captions (Search Console, 891 calls, 58k users) step through one at a time; light warms from before to after. | Oryzo pinned chapter |
 | 04 "Six dashboards. Including the numbers that went the wrong way." | Horizontal evidence track, one card per dashboard; each card shows its before → after rows with sage/brick by direction and the full explanatory paragraph. | Fiasco horizontal gallery |
 | 05 "The searches happen either way." | Reading-highlight paragraph; the existing Today / Month 6 chart drawn as the two lines ("With the work" / "Without it"); illustrative note kept next to it. | Buzz line mask; Oryzo drawing |
-| 06 "Those are not vanity metrics. They are appointments." | Night stage, one large figure (891 calls) with the illustrative caveat at the same visual weight as the claim. | Oryzo single-object stage |
+| 06 "Those are not vanity metrics. They are appointments." | Removed on 2026-10-10: it presented calls as appointments without booking records. The 891 calls figure remains in the evidence chapter. | — |
 | 07 "Growth has one binding constraint. I find it first." | The three steps (Diagnose / Fix / Measure — a true sequence, so numbering is justified); stack list as a quiet logo row. | Buzz sticky stacking services |
 | 08 "Built on healthcare. Useful well beyond it." | Three audience panels. | — |
 | 09 "I am Muhammad Haseeb Sheikh." | Portrait (existing photo) lit on Night; text in serif. | Oryzo lit-object treatment |
@@ -503,7 +503,7 @@ same treatments.
 - Asymmetric two-column card grid (Fiasco). Each card: *italic serif* client name, H3
   outcome line, three big figures, sector tag. The existing **Constraint / Intervention /
   Outcome / Limit** expander becomes a four-part strip (P3); Limit keeps equal weight.
-- The flagship (Cure Allergy Clinic) spans the full width, like Fiasco's lead project.
+- The flagship (the multi-location specialty clinic) spans the full width, like Fiasco's lead project.
 - "Ecommerce case studies are in progress" and "Professional services case studies are
   mid-flight" shown as honest placeholder cards, not hidden.
 
@@ -544,13 +544,14 @@ provides it:
 2. **Visuals of the work itself.** Apart from dashboards, there are no before/after page
    designs, site-structure maps or Business Profile screenshots per case. Fiasco's story
    relies on showing the made thing.
-3. **Full write-ups for the other seven cases.** Only Cure Allergy Clinic has a long-form
+3. **Full write-ups for the other seven cases.** Only the multi-location specialty clinic has a long-form
    page; the rest have the four-part card only. Engagement length, start date and scope
    (what was delivered) per case would allow a Fiasco-style header for each.
 4. **Deliverables list per case.** Fiasco lists 10 deliverables beside each intro; the
    portfolio has phase titles but no explicit deliverables.
-5. **Permission status for named vs anonymised clients**, so logos and names can be shown
-   consistently (cases page says named clients are shown with permission).
+5. **Client names and logos: decided 2026-10-10.** Not authorised for public use; the site
+   now uses neutral descriptions (tools/content_edits.py). Copy that still says clients are
+   "named with permission" needs the owner's wording (see PROJECT_BRIEF.md).
 6. **Ecommerce and professional-services cases** — marked "in progress" / "mid-flight".
 7. **Form destination.** `diagnostic.html` and `contact.html` both set `ENDPOINT = ""`. They
    still work: the script falls back to opening the visitor's email app with a pre-filled

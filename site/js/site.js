@@ -184,7 +184,7 @@
   inView($$("[data-cu]"), function (g) {
     $$(".cu", g).forEach(function (v) { if (!v.dataset.done) { v.dataset.done = "1"; countUp(v); } });
   }, 0.4);
-  inView($$(".growbars, .waitwrap"), function (el) { el.classList.add("in"); }, 0.35);
+  inView($$(".waitwrap"), function (el) { el.classList.add("in"); }, 0.35);
 
   // case study: before/after bars and the average-position move (19 → 6.5)
   $$(".ba-bar .fill").forEach(function (f) { if (still()) f.style.width = f.getAttribute("data-w"); });

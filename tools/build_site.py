@@ -22,6 +22,9 @@ import sys
 import tempfile
 import zipfile
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from content_edits import apply_edits, leftover_names  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ZIP = os.path.join(ROOT, "Muhammad Haseeb Sheikh _ Organic Growth & Healthcare SEO.zip")
 OUT = os.path.join(ROOT, "site")
@@ -174,6 +177,9 @@ def build_page(name, raw):
         s = s[i:]
         s = s[:s.index("</html>") + len("</html>")] + "\n"
 
+    # owner-directed privacy and evidence edits (the only content changes; see content_edits.py)
+    s = apply_edits(name, s)
+
     head_end = s.index("</head>")
     head, body = s[:head_end], s[head_end:]
 
@@ -274,7 +280,11 @@ def build_page(name, raw):
         scripts += '<script src="js/stage.js" defer></script>\n'
     body = body.replace("</body>", scripts + "</body>", 1)
 
-    return head + body
+    out = head + body
+    left = leftover_names(out)
+    if left:
+        raise SystemExit("%s still contains client names: %s" % (name, left))
+    return out
 
 
 def main():
@@ -288,11 +298,17 @@ def main():
     for page in PAGES:
         raw = open(os.path.join(tmp, page), encoding="utf-8").read()
         open(os.path.join(OUT, page), "w", encoding="utf-8").write(build_page(page, raw))
+    # copy only the images the built pages reference (client logos are not shipped)
+    used = set()
+    for page in PAGES:
+        used |= set(re.findall(r'(?:assets|images)/[^"\s)]+', open(os.path.join(OUT, page), encoding="utf-8").read()))
     for item in ["assets", "images"]:
         dst = os.path.join(OUT, item)
         if os.path.exists(dst):
             shutil.rmtree(dst)
-        shutil.copytree(os.path.join(tmp, item), dst)
+        os.makedirs(dst)
+    for rel in sorted(used):
+        shutil.copy2(os.path.join(tmp, rel), os.path.join(OUT, rel))
     for f in ["favicon.png", "apple-touch-icon.png", "share.jpg"]:
         shutil.copy2(os.path.join(tmp, f), os.path.join(OUT, f))
     shutil.rmtree(tmp)

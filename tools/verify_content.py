@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Prove the redesign kept every page's content and SEO surface.
+"""Prove the redesign kept every page's content and SEO surface, apart from the
+owner-directed privacy/evidence edits listed in tools/content_edits.py.
 
 Compares each page in site/ with the original export in the zip:
   * <title>, meta description/robots/author, Open Graph, Twitter, profile tags
@@ -20,6 +21,9 @@ import sys
 import tempfile
 import zipfile
 from html.parser import HTMLParser
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from content_edits import apply_edits, leftover_names  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ZIP = os.path.join(ROOT, "Muhammad Haseeb Sheikh _ Organic Growth & Healthcare SEO.zip")
@@ -140,7 +144,7 @@ def original_pages():
         if page == "index.html":  # strip the saved-page wrapper, as the build does
             s = s[s.index("<!DOCTYPE html>"):]
             s = s[:s.index("</html>") + 7]
-        out[page] = s
+        out[page] = apply_edits(page, s)  # the owner-directed edits are the only allowed changes
     return out
 
 
@@ -151,6 +155,9 @@ def main():
         new = open(os.path.join(SITE, page), encoding="utf-8").read()
         a, b = extract(orig[page]), extract(new)
         problems = []
+        left = leftover_names(new)
+        if left:
+            problems.append(("client names", left, []))
         for key in sorted(set(a) | set(b)):
             if a[key] != b[key]:
                 missing = a[key] - b[key]
