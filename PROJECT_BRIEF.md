@@ -71,6 +71,19 @@ Summary of the proposed system, "Evidence in the light":
   the order. Say if you would rather renumber them or restore the original order.
 - Supply any of the content gaps in REFERENCE_DNA §7 (testimonial, work visuals, case
   details; both forms have `ENDPOINT = ""`, so they fall back to opening a pre-filled email).
+- **External audit (2026-10-10) flagged items that conflict with this brief.** They need the
+  owner's ruling before any change, because each one edits frozen content or the agreed
+  design system:
+  - remove the client logo wall and every client name (copy, alt text, logo images);
+  - remove the "6.3×", "5x booked calls" and "Nearly four years" claims; soften the
+    "Those are not vanity metrics. They are appointments." heading;
+  - replace the Vitality Direct Primary Care figures (source: 4.24k clicks, 525k impressions,
+    position 14.6 to 8.6) with "approved" ones (4.04k, 736k, 6.7) from a brief not in this repo;
+  - drop WebGL/3D and return to the original palette and Fraunces/Inter;
+  - move "What brings you here?" directly after the proof strip; unify CTA wording;
+    add `data-cta` tracking attributes; add a résumé download and a scheduling link
+    (neither file nor link has been supplied);
+  - set a form endpoint; serve the 404 page's icons from the site instead of the live domain.
 - Optionally allow the blocked asset hosts so Buzz and Fiasco can be re-inspected at full
   fidelity (REFERENCE_DNA §1).
 

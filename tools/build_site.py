@@ -58,6 +58,31 @@ NIGHT = {
 GL_PAGES = {"index.html": "top", "case-healthcare-seo.html": "case-hero"}
 
 PORTRAIT = "assets/img-f12f8c9a94dd.jpg"
+SRC_DIR = None  # set in main(); used to read intrinsic image sizes
+
+
+def add_image_dims(body):
+    """Give every <img> with a src explicit width/height (its intrinsic size) so the
+    browser reserves space before it loads. Attributes only; src/alt untouched."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return body
+    def fix(m):
+        tag = m.group(0)
+        if re.search(r"\swidth=", tag) and re.search(r"\sheight=", tag):
+            return tag
+        src = re.search(r'\ssrc="([^"]+)"', tag)
+        if not src or src.group(1).startswith(("http", "data:")):
+            return tag
+        path = os.path.join(SRC_DIR, src.group(1))
+        if not os.path.exists(path):
+            return tag
+        w, h = Image.open(path).size
+        tag = re.sub(r'\s(width|height)="[^"]*"', "", tag)
+        end = -2 if tag.endswith("/>") else -1
+        return tag[:end].rstrip() + ' width="%d" height="%d"' % (w, h) + tag[end:]
+    return re.sub(r"<img\b[^>]*>", fix, body)
 
 
 def find_element_end(s, start, tag):
@@ -238,6 +263,8 @@ def build_page(name, raw):
     body = body.replace('<div class="sc-in">',
                         '<div class="sc-in">\n    <img class="sc-face" src="%s" alt="" width="40" height="40" data-added>' % PORTRAIT)
 
+    body = add_image_dims(body)
+
     # body class for page-specific layout
     page_cls = "pg-" + name.replace(".html", "").replace("-", "_")
     body = re.sub(r"<body\b([^>]*)>", lambda m: '<body class="%s"%s>' % (page_cls, m.group(1)), body, count=1)
@@ -256,6 +283,8 @@ def main():
     with zipfile.ZipFile(zpath) as z:
         z.extractall(tmp)
     os.makedirs(OUT, exist_ok=True)
+    global SRC_DIR
+    SRC_DIR = tmp
     for page in PAGES:
         raw = open(os.path.join(tmp, page), encoding="utf-8").read()
         open(os.path.join(OUT, page), "w", encoding="utf-8").write(build_page(page, raw))

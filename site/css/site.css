@@ -1,5 +1,5 @@
 /* =====================================================================
-   Muhammad Haseeb Sheikh — "Evidence in the light"
+   Muhammad Haseeb Sheikh: "Evidence in the light"
    Design system from design/REFERENCE_DNA.md §5.
    Two stages: Night (immersive) and Chart paper (reading evidence).
    ===================================================================== */
@@ -413,7 +413,7 @@ footer::after{content:"Haseeb";display:block;flex-basis:100%;font-family:var(--f
 .pg-about .certcard{cursor:zoom-in}
 
 /* =====================================================================
-   INNER PAGES — shared hero and editorial prose
+   INNER PAGES: shared hero and editorial prose
    ===================================================================== */
 #cs-hero,#m-hero,#case-hero,#about-top,#diag-top,#contact-top{padding-top:calc(var(--nav-h) + clamp(48px,9vh,112px))!important;overflow:hidden;
   background:radial-gradient(70% 60% at 85% 20%,rgba(242,163,58,.12),transparent 65%),var(--night)!important}
@@ -852,7 +852,7 @@ main.doc a,.pg-404 main a:not(.btn){color:var(--amber-ink)}
 }
 
 /* =====================================================================
-   REDUCED MOTION — OS setting or the on-page "Motion" toggle
+   REDUCED MOTION: OS setting or the on-page "Motion" toggle
    ===================================================================== */
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-delay:0ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}

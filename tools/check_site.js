@@ -11,7 +11,9 @@ const OUT = process.argv[3] || path.join(__dirname, '..', 'design', 'implementat
 const SITE = path.join(__dirname, '..', 'site');
 const PAGES = ['index', 'cases', 'case-healthcare-seo', 'method', 'about', 'diagnostic', 'partners', 'contact', 'privacy', '404'];
 const VIEWS = { desktop: { viewport: { width: 1440, height: 900 } },
-                mobile: { viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true } };
+                mobile: { viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true },
+                mobile360: { viewport: { width: 360, height: 780 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true },
+                mobile414: { viewport: { width: 414, height: 896 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true } };
 const LAUNCH = { executablePath: '/opt/pw-browsers/chromium', args: ['--no-sandbox', '--use-gl=swiftshader', '--enable-webgl', '--ignore-gpu-blocklist'] };
 const report = { pages: {}, links: {}, keyboard: {}, menu: {}, reducedMotion: {}, noJs: {}, form: {}, cases: {}, failures: [] };
 const fail = (m) => { report.failures.push(m); console.log('FAIL', m); };
@@ -56,10 +58,10 @@ async function scrollThrough(page) {
       if (r.h1 !== 1) fail(`${name} ${vname}: expected one h1, found ${r.h1}`);
       report.pages[`${name}-${vname}`] = { ...r, errors, external: [...new Set(external)] };
       // representative viewport shots down the page (lazy images are loaded now)
-      if (vname === 'desktop' || ['index', 'case-healthcare-seo', 'cases', 'diagnostic'].includes(name)) {
+      if (vname === 'desktop' || (vname === 'mobile' && ['index', 'case-healthcare-seo', 'cases', 'diagnostic'].includes(name))) {
         const stops = name === 'index' ? 8 : 4;
         for (let i = 1; i <= stops; i++) {
-          const y = Math.round((r.height - (vname === 'desktop' ? 900 : 844)) * i / stops);
+          const y = Math.round((r.height - vopts.viewport.height) * i / stops);
           await page.evaluate(v => window.scrollTo(0, v), y); await sleep(900);
           await shot(page, `${name}-${vname}-${String(i).padStart(2, '0')}`);
         }

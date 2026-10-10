@@ -205,6 +205,212 @@
         "https://muhammadhaseeb.co/favicon.png",
         "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
       ]
+    },
+    "index-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 17906,
+      "gl": true,
+      "errors": [],
+      "external": []
+    },
+    "cases-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 6936,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "case-healthcare-seo-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 25367,
+      "gl": true,
+      "errors": [],
+      "external": []
+    },
+    "method-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 12772,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "about-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 16361,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "diagnostic-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 7633,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "partners-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 16292,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "contact-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 3983,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "privacy-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 1415,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "404-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 780,
+      "gl": false,
+      "errors": [],
+      "external": [
+        "https://muhammadhaseeb.co/favicon.png",
+        "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+      ]
+    },
+    "index-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 17139,
+      "gl": true,
+      "errors": [],
+      "external": []
+    },
+    "cases-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 6787,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "case-healthcare-seo-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 23068,
+      "gl": true,
+      "errors": [],
+      "external": []
+    },
+    "method-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 12141,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "about-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 15508,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "diagnostic-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 7116,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "partners-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 15524,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "contact-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 3827,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "privacy-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 1328,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "404-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 896,
+      "gl": false,
+      "errors": [],
+      "external": [
+        "https://muhammadhaseeb.co/favicon.png",
+        "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+      ]
     }
   },
   "links": {
