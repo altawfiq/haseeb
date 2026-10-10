@@ -1,0 +1,339 @@
+{
+  "pages": {
+    "index-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 15879,
+      "gl": true,
+      "errors": [],
+      "external": []
+    },
+    "cases-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 5714,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "case-healthcare-seo-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 19136,
+      "gl": true,
+      "errors": [],
+      "external": []
+    },
+    "method-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 10048,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "about-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 10673,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "diagnostic-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 5811,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "partners-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 12493,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "contact-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 3016,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "privacy-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 1301,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "404-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 900,
+      "gl": false,
+      "errors": [],
+      "external": [
+        "https://muhammadhaseeb.co/favicon.png",
+        "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+      ]
+    },
+    "index-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 17328,
+      "gl": true,
+      "errors": [],
+      "external": []
+    },
+    "cases-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 6959,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "case-healthcare-seo-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 23630,
+      "gl": true,
+      "errors": [],
+      "external": []
+    },
+    "method-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 12441,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "about-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 15965,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "diagnostic-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 7420,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "partners-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 15892,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "contact-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 3865,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "privacy-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 1318,
+      "gl": false,
+      "errors": [],
+      "external": []
+    },
+    "404-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 844,
+      "gl": false,
+      "errors": [],
+      "external": [
+        "https://muhammadhaseeb.co/favicon.png",
+        "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+      ]
+    }
+  },
+  "links": {
+    "internalChecked": 241,
+    "external": [
+      "mailto:haseeb7665@gmail.com",
+      "https://www.linkedin.com/in/muhammadhaseebsheikh"
+    ]
+  },
+  "keyboard": {
+    "stops": [
+      {
+        "el": "A Skip to content",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Haseeb",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Proof",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Case studies",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Method",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A About",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Contact",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Free diagnostic",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "BUTTON#motionToggle Motion: on",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Get my free diagnostic →",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A See the proof first",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A healthcare SEO case study",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A free organic growth diagnostic",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Read the full case study →",
+        "outline": true,
+        "visible": true
+      }
+    ]
+  },
+  "menu": {
+    "open": {
+      "open": true,
+      "expanded": "true",
+      "focus": "Overview"
+    },
+    "closed": {
+      "open": false,
+      "focus": "burger"
+    },
+    "landed": "http://localhost:8765/method.html"
+  },
+  "reducedMotion": {
+    "os": {
+      "rm": true,
+      "label": "Motion: off",
+      "split": 0,
+      "track": false
+    },
+    "afterToggle": {
+      "rm": false,
+      "label": "Motion: on",
+      "pressed": "false"
+    }
+  },
+  "noJs": {
+    "index": {
+      "text": "Your next customers are searching right now. I make sure the",
+      "opacity": "1",
+      "display": "block"
+    },
+    "case-healthcare-seo": {
+      "text": "How a specialty clinic went from page two to page one in six",
+      "opacity": "1",
+      "display": "block"
+    }
+  },
+  "form": {
+    "empty": "Please add your name.",
+    "badEmail": "Please add a valid email address."
+  },
+  "cases": {
+    "health": 5,
+    "saas": 3,
+    "ecomEmptyShown": true,
+    "expanded": "true"
+  },
+  "failures": []
+}

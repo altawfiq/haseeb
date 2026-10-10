@@ -552,9 +552,11 @@ provides it:
 5. **Permission status for named vs anonymised clients**, so logos and names can be shown
    consistently (cases page says named clients are shown with permission).
 6. **Ecommerce and professional-services cases** — marked "in progress" / "mid-flight".
-7. **Form destination.** `diagnostic.html` and `contact.html` both set `ENDPOINT = ""`, so
-   the forms have nowhere to submit. A destination (form service or email workflow) is
-   needed before launch. Fields stay the same either way.
+7. **Form destination.** `diagnostic.html` and `contact.html` both set `ENDPOINT = ""`. They
+   still work: the script falls back to opening the visitor's email app with a pre-filled
+   message (as the privacy page describes). A form endpoint would remove that extra step;
+   it is the owner's choice. (Corrected 2026-10-10; the first version of this note said the
+   forms could not submit.)
 8. **Higher-resolution originals** of dashboard screenshots and the portrait, if available,
    for large lit presentation.
 

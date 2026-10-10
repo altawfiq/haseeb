@@ -10,7 +10,8 @@ Read `PROJECT_BRIEF.md` first — it holds the goal, page inventory and content 
   JSON-LD, heading levels, alt text, internal link targets and filenames.
 - Source content lives in `Muhammad Haseeb Sheikh _ Organic Growth & Healthcare SEO.zip`.
   Don't modify or delete it; extract to a scratch/temp directory to read it.
-- Do not build, deploy or publish the redesign until the owner explicitly asks.
+- The redesign is built (owner asked 2026-10-10). Do not deploy, publish, merge or open a PR
+  until the owner explicitly asks.
 - Accessibility and performance are requirements: honour `prefers-reduced-motion`,
   keep text real HTML (not canvas-only), keep pages crawlable without JS where possible.
 - The owner uses Claude Code in the browser (no local terminal). Give instructions
@@ -34,6 +35,18 @@ Read `PROJECT_BRIEF.md` first — it holds the goal, page inventory and content 
   list (REFERENCE_DNA §7) and ask; never fill the gap with invented content.
 - Oryzo ignores `prefers-reduced-motion`; this site must not. Every pinned, scrubbed,
   blurred or 3D effect needs a static, fully readable fallback.
+
+## Site build (redesign)
+- `site/` is the redesigned site. Its HTML is **generated**: edit `tools/build_site.py`
+  (section order, stages, injections), `site/css/site.css`, `site/js/site.js` or
+  `site/js/stage.js` — never hand-edit `site/*.html`. Rebuild: `python3 tools/build_site.py`.
+- After every rebuild run `python3 tools/verify_content.py` (must print ok for all pages:
+  text, headings, links, images/alt, forms, head/SEO tags and JSON-LD unchanged).
+- Browser checks: serve with `python3 -m http.server 8765 --directory site`, then
+  `node tools/check_site.js` (writes screenshots + report.json to
+  `design/implementation-screenshots/`). Playwright resolves from node_modules or `$PWPATH`
+  (the npx cache: `ls -d ~/.npm/_npx/*/node_modules/playwright`).
+- Fonts are self-hosted in `site/fonts/` (Schibsted Grotesk, Newsreader — SIL OFL).
 
 ## Browser inspection (Playwright MCP)
 - Configured in `.mcp.json` (server `playwright`), headless, using the pre-installed
