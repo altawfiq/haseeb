@@ -335,6 +335,19 @@ and mobile. WordPress theme, Lenis smooth scrolling, Gravity Forms.
 
 ## 5. One design system for the portfolio
 
+> **Update 2026-10-11 (approved hybrid).** Where this section and the notes below differ,
+> the notes win:
+> - The hero scenes show evidence, not an illustrative curve: Home = two columns at the
+>   real six-month click totals (7.65k, 48.2k); case study = twenty result positions with a
+>   marker moving from #19 to #6.5. They run on phones (scene-first hero below 1200px).
+> - The "cost of waiting" curve is replaced by a labelled before/after bar comparison.
+> - The floating CTA pill is gone (fixed controls must not cover content); the motion
+>   toggle sits in the header; the header collapses to the menu before labels cramp.
+> - The case study has a stage bar: Challenge, Approach, Work, Results, Limits.
+> - Contact has no form (Book a call, Email, LinkedIn, diagnostic); the diagnostic is an
+>   email request until a form endpoint exists; "Book a call" is in the Home hero.
+> - Logo wall, brand sections and brand counts are removed for privacy.
+
 Working name: **"Evidence in the light."** The site is a lit stage where real Search Console
 evidence is the protagonist, the way Oryzo's coaster is. Every chapter puts one piece of
 proof in the centre and lets the explanation move around it.

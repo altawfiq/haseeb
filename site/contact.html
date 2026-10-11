@@ -29,7 +29,7 @@
 </head>
 <body class="pg-contact">
 
-<a class="skip" href="#contactForm">Skip to the form</a>
+<a class="skip" href="#contact-top">Skip to content</a>
 <div id="progress" aria-hidden="true"></div>
 
 <header id="nav">
@@ -45,7 +45,8 @@
     <a href="contact.html" aria-current="page">Contact</a>
     <a href="diagnostic.html" class="nav-cta">Free diagnostic</a>
   </nav>
-  <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i><i></i></button>
+  <button id="motionToggle" data-on="true" aria-pressed="false" aria-label="Toggle reduced motion"><span class="led"></span><span id="motionLabel">Motion: on</span></button>
+    <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i><i></i></button>
 </header>
 <div id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu">
   <a href="index.html">Overview</a>
@@ -56,7 +57,6 @@
   <a href="contact.html" aria-current="page">Contact</a>
   <a href="diagnostic.html">Free diagnostic</a>
 </div>
-<button id="motionToggle" data-on="true" aria-pressed="false" aria-label="Toggle reduced motion"><span class="led"></span><span id="motionLabel">Motion: on</span></button>
 
 <main class="main" id="top">
 
@@ -72,6 +72,7 @@
   </div>
       <p class="contact-sub">Whether you want the free diagnostic, have a project in mind, or just have a question about your organic growth, send it over. I read and reply to everything personally.</p>
       <div class="chan">
+        <a href="mailto:haseeb7665@gmail.com?subject=Book%20a%20call" data-booking><span class="ic">&#9673;</span><span class="ct"><span class="ck">Book a call</span><span class="cv">Email me to pick a time</span></span><span class="arr">&rarr;</span></a>
         <a href="mailto:haseeb7665@gmail.com"><span class="ic">@</span><span class="ct"><span class="ck">Email</span><span class="cv">haseeb7665@gmail.com</span></span><span class="arr">&rarr;</span></a>
         <a href="https://www.linkedin.com/in/muhammadhaseebsheikh" target="_blank" rel="noopener"><span class="ic">in</span><span class="ct"><span class="ck">LinkedIn</span><span class="cv">muhammadhaseebsheikh</span></span><span class="arr">&rarr;</span></a>
         <a href="diagnostic.html"><span class="ic">&#9670;</span><span class="ct"><span class="ck">Fastest start</span><span class="cv">Request the free growth diagnostic</span></span><span class="arr">&rarr;</span></a>
@@ -80,36 +81,6 @@
     </div>
     <div>
       <div class="contact-photo"><img src="assets/img-f12f8c9a94dd.jpg" alt="Muhammad Haseeb Sheikh, Organic Growth Strategist" width="820" height="820"/></div>
-      <div class="form-card" id="contactForm-wrap">
-        <h2 class="fc-h">Send a message</h2>
-        <p class="fc-s">Two minutes. Straight to my inbox.</p>
-        <form id="contactForm" novalidate>
-          <input type="text" id="hp_company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"  name="company"/>
-          <div class="field"><label for="f-name">Your name</label><input type="text" id="f-name" autocomplete="name" required  name="name"/></div>
-          <div class="field"><label for="f-email">Email</label><input type="email" id="f-email" autocomplete="email" required  name="email"/></div>
-          <div class="field"><label for="f-topic">What is this about?</label>
-            <select id="f-topic" name="topic">
-              <option value="">Select one (optional)</option>
-              <option>Free diagnostic</option>
-              <option>Project inquiry</option>
-              <option>Question about my growth</option>
-              <option>Something else</option>
-            </select>
-          </div>
-          <div class="field"><label for="f-site">Website <span class="opt">(optional)</span></label><input type="url" id="f-site" placeholder="https://"  name="website" inputmode="url"/></div>
-          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" placeholder="What is on your mind?" required name="message"></textarea></div>
-          <p id="formErr" class="form-err" role="alert"></p>
-          <button type="submit" id="formSubmit" class="btn btn-primary form-submit">Send message <span class="arr">&rarr;</span></button>
-      
-          <p class="form-note">No spam, no list, no obligation. Your message only ever reaches me.</p>
-        </form>
-      </div>
-      <div id="contactThanks" class="thanks" hidden>
-        <div class="thanks-mark" aria-hidden="true">&#10003;</div>
-        <h3>Message sent.</h3>
-        <p id="thanksMsg">Your email app should open with your message filled in. Press send there and I will reply personally, usually within two business days.</p>
-        <a href="cases.html" class="btn btn-ghost">Browse the case studies in the meantime <span class="arr">&rarr;</span></a>
-      </div>
     </div>
   </div>
 </section>
@@ -143,49 +114,6 @@
   <small>&copy; 2026 Muhammad Haseeb Sheikh &middot; Diagnose &middot; Fix &middot; Measure</small>
 </footer>
 
-<script>(function(){
-  var ENDPOINT = "";
-  var form=document.getElementById("contactForm");
-  if(!form)return;
-  var err=document.getElementById("formErr");
-  var thanks=document.getElementById("contactThanks");
-  var btn=document.getElementById("formSubmit");
-  function val(id){var e=document.getElementById(id);return e?e.value.trim():"";}
-  function fail(msg){if(err)err.textContent=msg;}
-  form.addEventListener("submit",function(ev){
-    ev.preventDefault();
-    fail("");
-    var hp=document.getElementById("hp_company");
-    if(hp&&hp.value){ return; }
-    var name=val("f-name"),email=val("f-email"),site=val("f-site"),msg=val("f-msg");
-    var extra=val("f-stage")||val("f-topic");
-    if(!name){return fail("Please add your name.");}
-    if(!email||email.indexOf("@")<1||email.indexOf(".")<0){return fail("Please add a valid email address.");}
-    if(!msg){return fail("Please add a short message.");}
-    if(btn){btn.disabled=true;}
-    var payload={name:name,email:email,website:site,detail:extra,message:msg,page:location.pathname};
-    if(ENDPOINT){
-      fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
-        .then(function(r){ if(!r.ok)throw 0; done(); })
-        .catch(function(){ if(btn)btn.disabled=false; mailto(payload); });
-    } else { mailto(payload); mailSent(); }
-  });
-  function mailSent(){ if(thanks){thanks.hidden=false; var t=thanks.querySelector("h2,h3"); if(t)t.textContent="Almost done: press send in your email app."; var m=document.getElementById("thanksMsg"); if(m)m.textContent="Your email app should open with everything filled in. If it did not open, email haseeb7665@gmail.com directly and I will reply within two business days."; } if(form)form.style.display="none"; }
-  function mailto(p){
-    var lines=["Name: "+p.name,"Email: "+p.email];
-    if(p.website)lines.push("Website: "+p.website);
-    if(p.detail)lines.push("Detail: "+p.detail);
-    if(p.message)lines.push("","Message:",p.message);
-    var subj=encodeURIComponent("New enquiry from "+(p.name||"website"));
-    var body=encodeURIComponent(lines.join("\n"));
-    location.href="mailto:haseeb7665@gmail.com?subject="+subj+"&body="+body;
-  }
-  function done(){
-    if(thanks){thanks.hidden=false;}
-    var wrap=form.parentNode; if(wrap)wrap.style.display="none";
-    if(thanks&&thanks.scrollIntoView)thanks.scrollIntoView({behavior:"smooth",block:"center"});
-  }
-})();</script>
 <script src="js/site.js" defer></script>
 </body>
 </html>

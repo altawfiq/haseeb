@@ -5,8 +5,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 14512,
+      "height": 13768,
       "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -15,8 +20,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 5714,
+      "height": 5623,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -25,8 +35,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 18053,
+      "height": 18149,
       "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -35,8 +50,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 10048,
+      "height": 9990,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -45,8 +65,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 10156,
+      "height": 9601,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -55,8 +80,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 5811,
+      "height": 5817,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -65,8 +95,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 12493,
+      "height": 12473,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -75,8 +110,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 3016,
+      "height": 3136,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -85,8 +125,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 1301,
+      "height": 1361,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -97,6 +142,11 @@
       "h1": 1,
       "height": 900,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": [
         "https://muhammadhaseeb.co/favicon.png",
@@ -108,8 +158,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 14950,
+      "height": 14527,
       "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -118,8 +173,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 6959,
+      "height": 6616,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -128,8 +188,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 22235,
+      "height": 22247,
       "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -138,8 +203,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 12441,
+      "height": 12216,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -148,8 +218,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 14584,
+      "height": 13962,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -158,8 +233,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 7420,
+      "height": 7144,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -168,8 +248,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 15892,
+      "height": 15825,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -178,8 +263,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 3865,
+      "height": 3579,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -188,8 +278,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 1318,
+      "height": 1390,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -200,6 +295,11 @@
       "h1": 1,
       "height": 844,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": [
         "https://muhammadhaseeb.co/favicon.png",
@@ -211,8 +311,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 15478,
+      "height": 14981,
       "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -221,8 +326,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 6936,
+      "height": 6592,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -231,8 +341,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 23898,
+      "height": 23858,
       "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -241,8 +356,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 12772,
+      "height": 12547,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -251,8 +371,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 14956,
+      "height": 14307,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -261,8 +386,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 7633,
+      "height": 7406,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -271,8 +401,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 16292,
+      "height": 16237,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -281,8 +416,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 3983,
+      "height": 3660,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -291,8 +431,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 1415,
+      "height": 1460,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -303,6 +448,11 @@
       "h1": 1,
       "height": 780,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": [
         "https://muhammadhaseeb.co/favicon.png",
@@ -314,8 +464,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 14790,
+      "height": 14497,
       "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -324,8 +479,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 6787,
+      "height": 6547,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -334,8 +494,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 21700,
+      "height": 21712,
       "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -344,8 +509,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 12141,
+      "height": 11944,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -354,8 +524,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 14103,
+      "height": 13512,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -364,8 +539,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 7116,
+      "height": 6892,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -374,8 +554,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 15524,
+      "height": 15457,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -384,8 +569,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 3827,
+      "height": 3543,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -394,8 +584,13 @@
       "wide": [],
       "broken": [],
       "h1": 1,
-      "height": 1328,
+      "height": 1372,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": []
     },
@@ -406,6 +601,11 @@
       "h1": 1,
       "height": 896,
       "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
       "errors": [],
       "external": [
         "https://muhammadhaseeb.co/favicon.png",
@@ -414,7 +614,7 @@
     }
   },
   "links": {
-    "internalChecked": 239,
+    "internalChecked": 226,
     "external": [
       "mailto:haseeb7665@gmail.com",
       "https://www.linkedin.com/in/muhammadhaseebsheikh"
@@ -473,6 +673,11 @@
         "visible": true
       },
       {
+        "el": "A Book a call",
+        "outline": true,
+        "visible": true
+      },
+      {
         "el": "A See the proof first",
         "outline": true,
         "visible": true
@@ -484,11 +689,6 @@
       },
       {
         "el": "A free organic growth diagnostic",
-        "outline": true,
-        "visible": true
-      },
-      {
-        "el": "A Read the full case study →",
         "outline": true,
         "visible": true
       }
@@ -531,15 +731,110 @@
       "display": "block"
     }
   },
-  "form": {
-    "empty": "Please add your name.",
-    "badEmail": "Please add a valid email address."
+  "contact": {
+    "book": {
+      "href": "mailto:haseeb7665@gmail.com?subject=Book%20a%20call",
+      "visible": true
+    },
+    "contact": {
+      "forms": 0,
+      "actions": [
+        [
+          "Book a call",
+          "mailto:haseeb7665@gmail.com?subject=Book%20a%20call"
+        ],
+        [
+          "Email",
+          "mailto:haseeb7665@gmail.com"
+        ],
+        [
+          "LinkedIn",
+          "https://www.linkedin.com/in/muhammadhaseebsheikh"
+        ],
+        [
+          "Fastest start",
+          "diagnostic.html"
+        ]
+      ]
+    },
+    "diagnostic": {
+      "forms": 0,
+      "mail": "mailto:haseeb7665@gmail.com?subject=Free%20diagnostic%20request&body=Your%20name%3A%20%0AWebsite%20URL%3A%20%0AWhere%20are%20you%20now%3F%20%0AYour%20biggest%20growth%20challenge%3A%20"
+    }
   },
   "cases": {
     "health": 5,
     "saas": 3,
-    "ecomEmptyShown": true,
+    "noEmptyFutureFilters": true,
     "expanded": "true"
+  },
+  "motion": {
+    "scene-home-mobile390": {
+      "moved": true,
+      "framesDrawn": 93,
+      "size": [
+        390,
+        503
+      ]
+    },
+    "scene-home-mobile360": {
+      "moved": true,
+      "framesDrawn": 91,
+      "size": [
+        360,
+        470
+      ]
+    },
+    "scene-case-mobile390": {
+      "moved": true,
+      "framesDrawn": 89,
+      "size": [
+        390,
+        503
+      ]
+    },
+    "scene-home-desktop": {
+      "moved": true,
+      "framesDrawn": 77,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    "scene-case-desktop": {
+      "moved": true,
+      "framesDrawn": 82,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    "scene-home-mobile-reduced": {
+      "moved": false,
+      "framesDrawn": 0,
+      "size": [
+        390,
+        503
+      ]
+    },
+    "scene-case-mobile-reduced": {
+      "moved": false,
+      "framesDrawn": 0,
+      "size": [
+        390,
+        503
+      ]
+    }
+  },
+  "story": {
+    "seen": {
+      "context": "1Challenge",
+      "approach": "2Approach",
+      "execution": "3Work",
+      "results": "4Results",
+      "honest": "5Limits"
+    },
+    "jumped": true
   },
   "failures": []
 }

@@ -43,60 +43,40 @@ Plus `assets/` (≈46 images), `images/muhammad-haseeb-sheikh.jpg`, `favicon.png
 - Only presentation changes: layout, typography, color, 3D, motion.
 
 ## Design direction
-Full research, tokens and page-by-page mapping: **`design/REFERENCE_DNA.md`**.
-Summary of the proposed system, "Evidence in the light":
+Full research, tokens and mapping: **`design/REFERENCE_DNA.md`**. Evidence and audit
+status: **`design/AUDIT_V4_CROSSCHECK.md`**. Approved hybrid (2026-10-11):
 
-- **One protagonist per chapter** (Oryzo): real evidence — the 7.65k → 48.2k click curve,
-  dashboard screenshots, the 19 → 6.5 position move, the portrait — held centre in pinned
-  chapters while copy changes around it.
-- **Proof before pitch** (Buzz): evidence → method → audience → one enquiry path.
-- **Constraint → intervention → outcome → limit** (Fiasco): the case cards' existing four
-  labels become the spine of every case; the flagship case follows Fiasco's
-  intro → challenge → chapters → result → next pattern.
-- **Two stages**: warm Night `#15110C` for immersive chapters, cool Chart paper `#EEF0E8`
-  for reading evidence; Signal amber `#F2A33A` (continuity with the current amber) as the
-  only accent (darker "ink" variants on the light stage for contrast); sage/brick reserved
-  for metrics that rose/fell.
-- **Type**: Schibsted Grotesk (display/UI, tabular figures) + Newsreader (editorial serif,
-  italics for names and captions). Sentence case, larger body text than the references.
-- **Motion explains change**: drawn-line loader, pinned evidence chapter, one blur-to-sharp
-  line, horizontal dashboard track, scrubbed reading highlight, floating
-  "Get my free diagnostic" pill with Haseeb's photo. Static, fully readable fallback under
-  `prefers-reduced-motion`; all text stays HTML.
-- Never import the references' branding, copy, claims, fonts, images or other assets.
+- **Oryzo** (atmosphere, depth, motion, pacing): evidence scenes in WebGL. Home shows the
+  clinic's two real six-month click totals (7.65k, 48.2k) as columns of light; the case
+  study shows twenty result positions with a marker moving from #19 to #6.5. They animate
+  on phones as well as desktop (scene-first hero below 1200px) and hold a deliberate still
+  frame under reduced motion. All figures also live in the HTML.
+- **Buzz** (services, selected work, credibility, enquiry): proof before pitch; one clear
+  enquiry path ("Get my free diagnostic", plus "Book a call" in the Home hero); Contact
+  offers Book a call, Email, LinkedIn and the diagnostic, with no form.
+- **Fiasco** (case storytelling): the case study carries a stage bar (Challenge, Approach,
+  Work, Results, Limits) that follows the reader; case cards keep Constraint, Intervention,
+  Outcome, Limit.
+- **Header**: concise labels, roomy spacing, collapses to an accessible menu before labels
+  cramp; the motion toggle sits in the header; no floating bars over content.
+- **Palette/type**: Night `#15110C` / Chart paper `#EEF0E8`, Signal amber `#F2A33A` with
+  darker ink variants on the light stage; Schibsted Grotesk + Newsreader.
+- **Privacy and evidence**: no client names, logos, brand counts or private dashboards;
+  no calls or clicks presented as appointments; figures match their screenshots;
+  unverifiable or disputed items are flagged, not rewritten.
 
 ### Decisions waiting on the owner
-- Home re-sequence was applied as proposed (REFERENCE_DNA §6.1); the old section numbers
-  (01–11) are kept in the HTML but hidden on the home page because they no longer match
-  the order. Say if you would rather renumber them or restore the original order.
-- Supply any of the content gaps in REFERENCE_DNA §7 (testimonial, work visuals, case
-  details; both forms have `ENDPOINT = ""`, so they fall back to opening a pre-filled email).
-- **Owner decisions after the external audit (2026-10-10):**
-  - Client names and logos are **not authorised for public use**. Logo wall removed; names
-    replaced by neutral descriptions across copy, alt text and JSON-LD; logo files not shipped.
-  - Clicks and calls are **not presented as appointments** without booking records; the two
-    "They are appointments." sections and one "actual patients" sentence were removed.
-  - Disputed figures are checked against the dashboard screenshots; nothing is substituted
-    from older briefs. Unverifiable claims are flagged, not rewritten.
-  - WebGL, palette and typography follow this brief and REFERENCE_DNA §5.
-  - No résumé, scheduling link, tracking attributes or form service until the owner supplies
-    them; the mailto fallback stays.
-  - All edits live in `tools/content_edits.py` (the only allowed content changes).
-- **Still waiting on the owner** (see the latest report for detail):
-  - wording for statements that now read wrongly: "Named clients are shown with their
-    permission" (case studies), "Named brands are shown with permission" (home FAQ and its
-    JSON-LD), og:description "named with permission" (case studies);
-  - unverifiable claims kept but flagged: "~4 years"/"Nearly four years", 5x booked calls,
-    35% traffic lift, 40%+ pages recovered (private engagements, no published dashboards),
-    the Rawah acquisition; "48.2k Visits from Google search" (the dashboard shows clicks);
-  - hedged call-to-patient wording kept but flagged ("as close to a booked patient as
-    analytics gets", "The closest thing to a booked patient", "far faster at actually
-    producing patients");
-  - whether the specialty ("allergy and immunology") is too identifying;
-  - git history still contains the earlier build and screenshots with client names and
-    logos (removing them needs a history rewrite and force-push).
-- Optionally allow the blocked asset hosts so Buzz and Fiasco can be re-inspected at full
-  fidelity (REFERENCE_DNA §1).
+See `design/AUDIT_V4_CROSSCHECK.md` §8. In short:
+- a scheduling URL for "Book a call" (set `BOOKING_URL` in `tools/content_edits.py`);
+- a form endpoint, if the diagnostic should use a form again;
+- written permission for each published dashboard; whether "allergy and immunology" is too
+  identifying;
+- evidence for flagged claims (query counts, ~4 years, 5x/35%/40%+, Rawah acquisition,
+  university, Australian link building, US agency, work narratives) and the GA4 year;
+- one framework wording (3 vs 4 constraint layers; Method sequence vs phases);
+- GA4 certificate renewal before 21 Oct 2026 (Semrush already expired 18 Jun 2026);
+- host setup: extensionless URLs vs `.html` links, robots.txt, sitemap, analytics;
+- repository visibility (public) and git history containing client names.
 
 ## Status
 - [x] Project prepared (this brief, CLAUDE.md, frontend-design skill, Playwright MCP).
@@ -109,5 +89,6 @@ Summary of the proposed system, "Evidence in the light":
       `tools/build_site.py` from the zip; content parity proven by `tools/verify_content.py`;
       browser checks by `tools/check_site.js` (screenshots in `design/implementation-screenshots/`).
 - [x] Privacy and evidence edits applied (2026-10-10).
+- [x] Audit v4 cross-check and hybrid pass (2026-10-11).
 - [ ] Owner review of the implementation.
 - [ ] Deploy. **Not done — do not deploy, merge or open a PR until the owner asks.**

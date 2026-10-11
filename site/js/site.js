@@ -68,6 +68,7 @@
     burger.setAttribute("aria-expanded", open ? "true" : "false");
     burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     document.body.style.overflow = open ? "hidden" : "";
+    document.body.classList.toggle("menu-open", open);
     if (nav) nav.classList.remove("hide");
     if (open) { var first = $("a, button", mm); if (first) first.focus(); }
     else burger.focus({ preventScroll: true });
@@ -88,7 +89,51 @@
         else if (!e.shiftKey && i === f.length - 1) { e.preventDefault(); f[0].focus(); }
       }
     });
-    addEventListener("resize", function () { if (innerWidth > 960 && mm.classList.contains("open")) setMenu(false); });
+    addEventListener("resize", function () { if (innerWidth > 960 && !nav.classList.contains("compact") && mm.classList.contains("open")) setMenu(false); });
+  }
+
+  /* ---------- header: collapse to the menu before labels get cramped ---------- */
+  function fitNav() {
+    if (!nav) return;
+    var links = $(".nav-links", nav);
+    if (!links) return;
+    nav.classList.remove("compact");
+    if (innerWidth <= 960) return;
+    var overflow = nav.scrollWidth > nav.clientWidth + 1;
+    var wrapped = $$("a", links).some(function (a) { return a.getClientRects().length > 1 || a.offsetHeight > 48; });
+    var tight = links.getBoundingClientRect().left - ($(".brand", nav) || links).getBoundingClientRect().right < 24;
+    if (overflow || wrapped || tight) nav.classList.add("compact");
+  }
+  fitNav();
+  addEventListener("resize", fitNav, { passive: true });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitNav);
+
+  /* the chapter rail is a visual aid (aria-hidden): keep it out of the tab order */
+  $$("#rail a").forEach(function (a) { a.tabIndex = -1; });
+
+  /* ---------- case study: stage bar follows the story ---------- */
+  var story = $(".story"), storyLinks = story ? $$("a", story) : [];
+  var storySecs = $$("section[data-story]");
+  function onScrollStory() {
+    if (!story) return;
+    var line = innerHeight * 0.35, current = null;
+    storySecs.forEach(function (s) { if (s.getBoundingClientRect().top < line) current = s.getAttribute("data-story"); });
+    var idx = -1;
+    storyLinks.forEach(function (a, i) { if (a.getAttribute("data-for") === current) idx = i; });
+    storyLinks.forEach(function (a, i) {
+      a.classList.toggle("on", i === idx); a.classList.toggle("done", i < idx);
+      if (i === idx) a.setAttribute("aria-current", "step"); else a.removeAttribute("aria-current");
+    });
+    var first = storySecs[0], last = storySecs[storySecs.length - 1];
+    if (first && last) {
+      var top = first.getBoundingClientRect().top + scrollY, end = last.getBoundingClientRect().bottom + scrollY - innerHeight;
+      story.style.setProperty("--p", clamp((scrollY - top + line) / Math.max(1, end - top + line), 0, 1).toFixed(3));
+    }
+    var box = storyLinks.length ? storyLinks[0].parentNode : null;
+    if (idx >= 0 && box && box.scrollWidth > box.clientWidth) {
+      var a = storyLinks[idx];
+      if (a.offsetLeft < box.scrollLeft || a.offsetLeft + a.offsetWidth > box.scrollLeft + box.clientWidth) box.scrollLeft = a.offsetLeft - 16;
+    }
   }
 
   /* ---------- floating CTA pill ---------- */
@@ -280,7 +325,7 @@
   var ticking = false;
   function frame() {
     ticking = false;
-    onScrollHeader(); onScrollPill(); onScrollRail(); onScrollProof(); onScrollRead(); onScrollTrack();
+    onScrollHeader(); onScrollPill(); onScrollRail(); onScrollStory(); onScrollProof(); onScrollRead(); onScrollTrack();
   }
   function req() { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
   addEventListener("scroll", req, { passive: true });

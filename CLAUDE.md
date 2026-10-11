@@ -9,9 +9,18 @@ Read `PROJECT_BRIEF.md` first — it holds the goal, page inventory and content 
 - **Privacy:** real client names and logos are not authorised for public use. Never put a
   client name or logo on a page, in alt text, metadata, JSON-LD or shipped images. The
   anonymised wording is defined in `tools/content_edits.py`; the build fails if a name leaks.
+  Do not restore the logo wall, brand sections or brand counts. Do not publish private
+  client dashboards or patient information; anonymising a dashboard does not establish
+  permission. Use only already-approved, non-identifying evidence; if permission or a metric
+  is disputed, record it in `design/AUDIT_V4_CROSSCHECK.md` and leave it unchanged.
 - **Evidence:** every figure must match its dashboard screenshot. Do not present clicks or
-  calls as appointments without booking records. Flag unverifiable claims; never invent
-  or substitute figures (including from older briefs).
+  calls as appointments or patients without booking records. Flag unverifiable claims;
+  never invent or substitute figures (including from older audits or briefs). When sources
+  conflict, list the competing values in `design/AUDIT_V4_CROSSCHECK.md`; do not choose one.
+- **Contact and booking:** no form without a real submission endpoint (Contact has none;
+  Diagnostic uses an email request). "Book a call" uses `BOOKING_URL` in
+  `tools/content_edits.py`; it falls back to an email until the owner supplies a scheduling
+  link. Never invent a booking, scheduling or form-service URL.
 - **Preserve SEO markup**: titles, meta descriptions, canonicals, OG/Twitter tags,
   JSON-LD, heading levels, alt text, internal link targets and filenames.
 - Source content lives in `Muhammad Haseeb Sheikh _ Organic Growth & Healthcare SEO.zip`.
@@ -32,6 +41,12 @@ Read `PROJECT_BRIEF.md` first — it holds the goal, page inventory and content 
   - https://fiasco.design/ — project storytelling: challenge → approach → resulting work.
 - Follow the design system in `design/REFERENCE_DNA.md` §5 ("Evidence in the light") and
   the content mapping in §6. Change it only with the owner's agreement.
+- Approved hybrid (2026-10-11): Oryzo atmosphere and pacing; Buzz-style clear services,
+  work, credibility and enquiry; Fiasco-style case storytelling (challenge, approach, work,
+  results, limits, with the stage bar). Motion and 3D must visibly work on phones as well
+  as desktop (evidence scenes in `site/js/stage.js`, scene-first hero below 1200px), with an
+  intentional still frame under reduced motion. Header: concise labels, roomy spacing,
+  collapses to the menu before labels cramp; no fixed controls over content.
 - Borrow principles only. Never import the references' branding, copy, claims, fonts,
   colours-as-brand, images, video or other assets. Their screenshots in
   `design/reference-screens/` are research material, not build assets.
@@ -51,7 +66,11 @@ Read `PROJECT_BRIEF.md` first — it holds the goal, page inventory and content 
   the owner-directed edits in `tools/content_edits.py`, and no client names).
 - Browser checks: serve with `python3 -m http.server 8765 --directory site`, then
   `node tools/check_site.js` (writes screenshots + report.json to
-  `design/implementation-screenshots/`). Playwright resolves from node_modules or `$PWPATH`
+  `design/implementation-screenshots/`). It covers 1440, 414, 390 and 360 px: header
+  wrapping, tap targets, fixed controls, overflow, assets, console errors, links, keyboard,
+  menu, CTAs, contact/diagnostic actions, the case stage bar, visible scene motion and the
+  reduced-motion still frame. A WebGL script or a "Motion: on" label is not proof; check
+  rendered frames. Playwright resolves from node_modules or `$PWPATH`
   (the npx cache: `ls -d ~/.npm/_npx/*/node_modules/playwright`).
 - Fonts are self-hosted in `site/fonts/` (Schibsted Grotesk, Newsreader — SIL OFL).
 

@@ -45,7 +45,8 @@
     <a href="contact.html">Contact</a>
     <a href="diagnostic.html" class="nav-cta">Free diagnostic</a>
   </nav>
-  <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i><i></i></button>
+  <button id="motionToggle" data-on="true" aria-pressed="false" aria-label="Toggle reduced motion"><span class="led"></span><span id="motionLabel">Motion: on</span></button>
+    <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i><i></i></button>
 </header>
 <div id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu">
   <a href="index.html">Overview</a>
@@ -56,7 +57,6 @@
   <a href="contact.html">Contact</a>
   <a href="diagnostic.html">Free diagnostic</a>
 </div>
-<button id="motionToggle" data-on="true" aria-pressed="false" aria-label="Toggle reduced motion"><span class="led"></span><span id="motionLabel">Motion: on</span></button>
 
 <main class="main" id="top">
 
@@ -71,7 +71,6 @@
   </div>
   <div class="cta-row reveal" data-d="2">
     <a href="diagnostic.html" class="btn btn-primary">Get my free diagnostic <span class="arr">&#8594;</span></a>
-    <a href="diagnostic.html" class="btn btn-ghost">Request a diagnostic</a>
   </div>
 </section>
 <section class="section" id="m-principle" data-scene="3" data-chapter="The principle" data-stage="paper">
@@ -175,9 +174,7 @@
     <div class="assure"><span>Free</span><span>No card</span><span>Reply in 2 business days</span><span>Findings are yours to keep</span></div>
       <div class="cta-row">
       <a href="diagnostic.html" class="btn btn-primary">Get my free diagnostic <span class="arr">&#8594;</span></a>
-      <a href="diagnostic.html" class="btn btn-ghost">Request a diagnostic</a>
     </div>
-      <p class="altpath">Hiring for a role? I am open to senior and lead SEO positions, full-time or contract. <a href="mailto:haseeb7665@gmail.com?subject=Role%20or%20project">Email me</a> for a resume tailored to the role, or <a href="https://www.linkedin.com/in/muhammadhaseebsheikh" target="_blank" rel="noopener">connect on LinkedIn</a>.</p>
   </div>
 </section>
 </main>
@@ -191,13 +188,6 @@
   <small>&copy; 2026 Muhammad Haseeb Sheikh &middot; Diagnose &middot; Fix &middot; Measure</small>
 </footer>
 
-<div id="stickyCta" aria-hidden="true" data-hide="#m-cta">
-  <div class="sc-in">
-    <img class="sc-face" src="assets/img-f12f8c9a94dd.jpg" alt="" width="40" height="40" data-added>
-    <span class="sc-t">Free growth diagnostic<small>No card &middot; no obligation</small></span>
-    <a href="diagnostic.html" class="btn btn-primary btn-sm">Get my free diagnostic</a>
-  </div>
-</div>
 
 
 <script src="js/site.js" defer></script>

@@ -45,7 +45,8 @@
     <a href="contact.html">Contact</a>
     <a href="diagnostic.html" class="nav-cta">Free diagnostic</a>
   </nav>
-  <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i><i></i></button>
+  <button id="motionToggle" data-on="true" aria-pressed="false" aria-label="Toggle reduced motion"><span class="led"></span><span id="motionLabel">Motion: on</span></button>
+    <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i><i></i></button>
 </header>
 <div id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu">
   <a href="index.html">Overview</a>
@@ -56,8 +57,6 @@
   <a href="contact.html">Contact</a>
   <a href="diagnostic.html">Free diagnostic</a>
 </div>
-<button id="motionToggle" data-on="true" aria-pressed="false" aria-label="Toggle reduced motion"><span class="led"></span><span id="motionLabel">Motion: on</span></button>
-<a id="quickCta" href="diagnostic.html">Free diagnostic <span aria-hidden="true">&rarr;</span></a>
 
 <main class="main" id="top">
 <section class="section" id="case-hero" data-scene="0" data-chapter="Case study" data-stage="night">
@@ -116,7 +115,8 @@
     </ol>
   </nav>
 </section>
-<section class="section tight prose" id="context" data-scene="3" data-chapter="Context" data-stage="paper">
+<nav class="story" aria-label="Case study stages" data-added><div class="story-in"><a href="#context" data-for="challenge"><span class="sn">1</span>Challenge</a><a href="#approach" data-for="approach"><span class="sn">2</span>Approach</a><a href="#execution" data-for="work"><span class="sn">3</span>Work</a><a href="#results" data-for="results"><span class="sn">4</span>Results</a><a href="#voice" data-for="limits"><span class="sn">5</span>Limits</a><span class="story-fill" aria-hidden="true"></span></div></nav>
+<section class="section tight prose" id="context" data-scene="3" data-chapter="Context" data-stage="paper" data-story="challenge">
   <p class="eyebrow">01 &middot; The business</p>
   <h2>A specialty clinic in a search-first category</h2>
   <p>The client is a multi-location allergy and immunology clinic. Every figure on this page is pulled straight from its Google Search Console, Analytics, and Business Profile, shared with permission and with account URLs cropped. No patient data is involved.</p>
@@ -132,7 +132,7 @@
     </ul>
   </div>
 </section>
-<section class="section tight prose" id="problem" data-scene="3" data-chapter="The problem" data-stage="paper">
+<section class="section tight prose" id="problem" data-scene="3" data-chapter="The problem" data-stage="paper" data-story="challenge">
   <p class="eyebrow">02 &middot; The starting point</p>
   <h2>What I found: invisible exactly where it counted</h2>
   <p>The first number that jumped out at me was the ratio. The site was being shown 1.42 million times but earning only about 7,650 clicks. That gap told me two things at once: the clinic was ranking too low to be chosen, and the few results that did appear did not look like the answer. Average position sat near 19, the bottom of page two, where almost nobody scrolls.</p>
@@ -142,7 +142,7 @@
     <p>One thing was capping everything: an <strong>intent mismatch sitting on top of weak technical and local foundations</strong>. The pages did not match how patients search, and the trust and booking signals were thin at the exact second a patient decides whether to call. Fix that, in the right order, and everything else moves.</p>
   </div>
 </section>
-<section class="section tight prose" id="diagnosis" data-scene="4" data-chapter="Diagnosis" data-stage="paper">
+<section class="section tight prose" id="diagnosis" data-scene="4" data-chapter="Diagnosis" data-stage="paper" data-story="challenge">
   <p class="eyebrow">03 &middot; The diagnosis</p>
   <h2>The five things I found holding it back</h2>
   <p>A constraint is rarely one broken thing. It is usually one primary bottleneck with a few reinforcing it. Here is what my audit surfaced, in the order I chose to attack it.</p>
@@ -158,17 +158,17 @@
     <p>The demand was already there and already searching. The clinic simply was not <strong>findable, convincing, or easy to act on</strong> at the moment that demand appeared.</p>
   </div>
 </section>
-<section class="section tight prose" id="approach" data-scene="5" data-chapter="My approach" data-stage="paper">
+<section class="section tight prose" id="approach" data-scene="5" data-chapter="My approach" data-stage="paper" data-story="approach">
   <p class="eyebrow">04 &middot; How I work</p>
   <h2>Why I refused to "just publish more content"</h2>
   <p>This is where most clinics get sold the wrong thing. They are told to buy blog posts, ten a month, on topics no patient ever searches for. I have watched practices spend a year and a real budget on content that never moved a single appointment.</p>
-  <p>So I did the opposite. I did not write one word of new content until the foundation could carry it. My rule is simple: find the one constraint doing the most damage, fix it, and only then move to the next thing it frees up. On this project that meant resisting the urge to "add more" and rebuilding the structure first. It feels slower. It is far faster at actually producing patients.</p>
+  <p>So I did the opposite. I did not write one word of new content until the foundation could carry it. My rule is simple: find the one constraint doing the most damage, fix it, and only then move to the next thing it frees up. On this project that meant resisting the urge to "add more" and rebuilding the structure first.</p>
   <div class="kbox">
     <div class="kl">My sequence</div>
     <p>Foundation first, then <strong>pages built around real patient intent</strong>, then <strong>authority and local trust</strong>, then a <strong>frictionless path to call or book</strong>. Each stage makes the next one pay off. Skip the order and you waste the spend. The full sequence is written out in the <a href="method.html">constraint-first SEO method</a>.</p>
   </div>
 </section>
-<section class="section tight prose" id="glossary" data-scene="5" data-chapter="Glossary" data-stage="paper">
+<section class="section tight prose" id="glossary" data-scene="5" data-chapter="Glossary" data-stage="paper" data-story="approach">
   <p class="eyebrow">05 &middot; The metrics, defined</p>
   <h2>So the results below read clearly</h2>
   <p>The numbers come from three tools. If any of these terms are unfamiliar, this is all you need to follow the story.</p>
@@ -178,10 +178,10 @@
     <div class="g"><div class="gt">Average position</div><div class="gd">The site's average ranking across all queries. Lower is better; position 1 is the top of page one, 11 to 20 is page two.</div></div>
     <div class="g"><div class="gt">CTR (click-through rate)</div><div class="gd">Clicks divided by impressions. It rises when the result ranks higher and looks like the right answer.</div></div>
     <div class="g"><div class="gt">Users &amp; sessions</div><div class="gd">From Analytics: distinct people and visits to the site, a check that search growth shows up as real audience growth.</div></div>
-    <div class="g"><div class="gt">Business Profile calls</div><div class="gd">Calls placed directly from the Google Business Profile on the map and in local results. The closest thing to a booked patient.</div></div>
+    <div class="g"><div class="gt">Business Profile calls</div><div class="gd">Calls placed directly from the Google Business Profile on the map and in local results.</div></div>
   </div>
 </section>
-<section class="section tight prose" id="execution" data-scene="8" data-chapter="Execution" data-stage="paper">
+<section class="section tight prose" id="execution" data-scene="8" data-chapter="Execution" data-stage="paper" data-story="work">
   <p class="eyebrow">06 &middot; The execution</p>
   <h2>Exactly what I did</h2>
   <p>Five phases. The first ran before everything else; the rest overlapped once the base was solid.</p>
@@ -206,7 +206,7 @@
   <p>All the visibility in the world is wasted if the next step is unclear. I made calling or booking the loudest thing on every high-intent page, put click-to-call front and center on mobile, and stripped the friction out of the path from "I think this is my problem" to "I have an appointment."</p>
   <ul class="bul"><li>Prominent, consistent call and book actions on high-intent pages</li><li>Mobile-first click-to-call, since that is where these searches happen</li><li>Less friction between landing on a page and taking action</li></ul>
 </section>
-<section class="section tight prose" id="results" data-scene="7" data-chapter="Results" data-stage="paper">
+<section class="section tight prose" id="results" data-scene="7" data-chapter="Results" data-stage="paper" data-story="results">
   <p class="eyebrow">07 &middot; The results</p>
   <h2>What changed, before and after</h2>
   <p>Six months later the picture had inverted. The same site that sat at the bottom of page two now averaged position 6.5 on page one, and the traffic and the calls followed. The bars below compare the six months before the work with the six months after.</p>
@@ -257,7 +257,7 @@
   <figure data-tilt class="dash"><img src="assets/img-285535b010dd.jpg" alt="Google Analytics 4: 58k active users January to June 2026, up 298 percent on the previous period" loading="lazy" width="817" height="460"/><figcaption>Analytics: <b>58k active users</b> from January to June 2026, up <b>298% on the previous period</b>, with sessions and views rising in step.</figcaption></figure>
 
   <h3>And the phone rang</h3>
-  <p>The metric that actually maps to revenue is calls placed straight from the Google Business Profile. For a clinic, this is as close to a booked patient as analytics gets.</p>
+  <p>The metric that actually maps to revenue is calls placed straight from the Google Business Profile.</p>
   <figure data-tilt class="dash"><img src="assets/img-1e4ef3b287bf.jpg" alt="Google Business Profile: 891 calls January to March 2026, up 19.4 percent on January to March 2025" loading="lazy" width="1000" height="441"/><figcaption>Google Business Profile: <b>891 calls in January to March 2026</b>, up <b>19.4%</b> on the same quarter of 2025.</figcaption></figure>
 
   <div class="kbox result">
@@ -273,13 +273,8 @@
     <a href="diagnostic.html" class="btn btn-primary">Get my free diagnostic <span class="arr">&rarr;</span></a>
   </div>
 
-  <div class="midcta" data-tilt>
-    <h3>Want this same read on your own site?</h3>
-    <p>The diagnostic that started this case study is free: one constraint, one first fix, in plain language. No pitch, no obligation.</p>
-    <a href="diagnostic.html" class="btn btn-primary btn-sm">Get my free diagnostic <span aria-hidden="true">&rarr;</span></a>
-  </div>
 </section>
-<section class="section tight prose" id="timeline" data-scene="8" data-chapter="Timeline" data-stage="paper">
+<section class="section tight prose" id="timeline" data-scene="8" data-chapter="Timeline" data-stage="paper" data-story="results">
   <p class="eyebrow">08 &middot; The timeline</p>
   <h2>How it unfolded, month by month</h2>
   <p>SEO is not linear. This is roughly how the six months played out, read against the Search Console chart above.</p>
@@ -290,12 +285,12 @@
     <div class="tl-item"><div class="tlm">Months 4 to 6</div><h4>Pullback, then a higher floor</h4><p>Daily clicks settle back to roughly 250 to 300, still about six times the starting baseline, and the six-month average position lands at 6.5. Holding that level depends on review velocity and keeping the local signals fed.</p></div>
   </div>
 </section>
-<section class="section tight prose" id="voice" data-scene="11" data-chapter="On proof" data-stage="night">
+<section class="section tight prose" id="voice" data-scene="11" data-chapter="On proof" data-stage="night" data-story="limits">
   <p class="eyebrow">A note on proof</p>
   <h2>No cherry-picked quote here</h2>
   <p>I could have dropped a glowing one-line testimonial in this spot. I would rather you trust the dashboards above, which are unedited and pulled straight from the clinic's own Search Console, Analytics, and Business Profile. When the owner gives me a line I am allowed to share publicly, it will live right here, with their permission and nothing invented. Until then, the numbers can speak for themselves.</p>
 </section>
-<section class="section tight prose" id="honest" data-scene="11" data-chapter="Honest read" data-stage="paper">
+<section class="section tight prose" id="honest" data-scene="11" data-chapter="Honest read" data-stage="paper" data-story="limits">
   <p class="eyebrow">09 &middot; The honest read</p>
   <h2>What worked, and what to keep in mind</h2>
   <h3>What did the heavy lifting</h3>
@@ -334,7 +329,6 @@
       <a href="diagnostic.html" class="btn btn-primary">Get my free diagnostic <span class="arr">&rarr;</span></a>
       <a href="cases.html" class="btn btn-ghost">See other case studies</a>
     </div>
-      <p class="altpath">Hiring or evaluating for a role? <a href="mailto:haseeb7665@gmail.com?subject=Role%20or%20project">Email me directly</a> or <a href="https://www.linkedin.com/in/muhammadhaseebsheikh" target="_blank" rel="noopener">connect on LinkedIn</a>.</p>
   </div>
 </section>
 </main>
@@ -345,16 +339,9 @@
     <a href="privacy.html">Privacy</a>
     <a href="partners.html">For agencies</a>
     <a href="https://www.linkedin.com/in/muhammadhaseebsheikh" target="_blank" rel="noopener">LinkedIn</a>
-  <small>&copy; 2026 Muhammad Haseeb Sheikh &middot; Find &middot; Understand &middot; Trust &middot; Choose</small>
+  <small>&copy; 2026 Muhammad Haseeb Sheikh &middot; Diagnose &middot; Fix &middot; Measure</small>
 </footer>
 
-<div id="stickyCta" aria-hidden="true" data-hide="#case-cta">
-  <div class="sc-in">
-    <img class="sc-face" src="assets/img-f12f8c9a94dd.jpg" alt="" width="40" height="40" data-added>
-    <span class="sc-t">Free growth diagnostic<small>No card &middot; no obligation</small></span>
-    <a href="diagnostic.html" class="btn btn-primary btn-sm">Get my free diagnostic</a>
-  </div>
-</div>
 
 
 <script src="js/site.js" defer></script>

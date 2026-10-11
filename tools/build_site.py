@@ -60,6 +60,14 @@ NIGHT = {
 # Pages that get the WebGL "climb" stage behind their hero.
 GL_PAGES = {"index.html": "top", "case-healthcare-seo.html": "case-hero"}
 
+# Case study: which chapter belongs to which stage of the story (challenge -> limits).
+CASE_STAGES = [("Challenge", ["context", "problem", "diagnosis"]),
+               ("Approach", ["approach", "glossary"]),
+               ("Work", ["execution"]),
+               ("Results", ["results", "timeline"]),
+               ("Limits", ["voice", "honest"])]
+STAGE_OF = {sid: name for name, ids in CASE_STAGES for sid in ids}
+
 PORTRAIT = "assets/img-f12f8c9a94dd.jpg"
 SRC_DIR = None  # set in main(); used to read intrinsic image sizes
 
@@ -248,11 +256,18 @@ def build_page(name, raw):
         for b in blocks:
             sid = section_id(b)
             b = set_attr(b, "data-stage", "night" if sid in night else "paper")
+            if name == "case-healthcare-seo.html" and sid in STAGE_OF:
+                b = set_attr(b, "data-story", STAGE_OF[sid].lower())
             if GL_PAGES.get(name) == sid:
                 head_end_b = b.index(">") + 1
                 b = (b[:head_end_b] + '\n  <canvas class="gl-stage" aria-hidden="true"></canvas>'
                      + b[head_end_b:])
             staged.append(b)
+            if name == "case-healthcare-seo.html" and sid == "case-hero":
+                links = "".join('<a href="#%s" data-for="%s"><span class="sn">%d</span>%s</a>' % (ids[0], n.lower(), i + 1, n)
+                                for i, (n, ids) in enumerate(CASE_STAGES))
+                staged.append('<nav class="story" aria-label="Case study stages" data-added><div class="story-in">%s'
+                              '<span class="story-fill" aria-hidden="true"></span></div></nav>' % links)
         main_inner = prefix + "\n".join(staged) + "\n" + suffix
         body = body[:mm.start()] + main_open + main_inner + body[mend:]
 
@@ -264,6 +279,13 @@ def build_page(name, raw):
                 items = {l: re.search(r'  <a href="#%s".*?</a>\n' % l, rm.group(2)).group(0) for l in links}
                 seq = [i for i in ORDER[name] if i in items] + [l for l in links if l not in ORDER[name]]
                 body = body[:rm.start(2)] + "".join(items[i] for i in seq) + body[rm.end(2):]
+
+    # the motion toggle lives in the header, so no fixed control floats over content
+    mt = re.search(r'<button id="motionToggle"[^>]*>.*?</button>\n?', body, re.S)
+    if mt and '<button id="burger"' in body:
+        btn = mt.group(0).rstrip("\n")
+        body = body[:mt.start()] + body[mt.end():]
+        body = body.replace('<button id="burger"', btn + '\n    <button id="burger"', 1)
 
     # floating CTA pill gets the portrait (decorative; alt="")
     body = body.replace('<div class="sc-in">',
