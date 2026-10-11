@@ -1,0 +1,840 @@
+{
+  "pages": {
+    "index-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 13768,
+      "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "cases-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 5623,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "case-healthcare-seo-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 18149,
+      "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "method-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 9990,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "about-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 9601,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "diagnostic-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 5817,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "partners-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 12473,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "contact-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 3136,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "privacy-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 1361,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "404-desktop": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 900,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": [
+        "https://muhammadhaseeb.co/favicon.png",
+        "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+      ]
+    },
+    "index-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 14527,
+      "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "cases-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 6616,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "case-healthcare-seo-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 22247,
+      "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "method-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 12216,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "about-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 13962,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "diagnostic-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 7144,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "partners-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 15825,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "contact-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 3579,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "privacy-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 1390,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "404-mobile": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 844,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": [
+        "https://muhammadhaseeb.co/favicon.png",
+        "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+      ]
+    },
+    "index-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 14981,
+      "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "cases-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 6592,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "case-healthcare-seo-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 23858,
+      "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "method-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 12547,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "about-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 14307,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "diagnostic-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 7406,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "partners-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 16237,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "contact-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 3660,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "privacy-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 1460,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "404-mobile360": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 780,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": [
+        "https://muhammadhaseeb.co/favicon.png",
+        "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+      ]
+    },
+    "index-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 14497,
+      "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "cases-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 6547,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "case-healthcare-seo-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 21712,
+      "gl": true,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "method-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 11944,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "about-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 13512,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "diagnostic-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 6892,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "partners-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 15457,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "contact-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 3543,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "privacy-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 1372,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": []
+    },
+    "404-mobile414": {
+      "overflow": 0,
+      "wide": [],
+      "broken": [],
+      "h1": 1,
+      "height": 896,
+      "gl": false,
+      "wrapped": [],
+      "headerOverflow": 0,
+      "menuReachable": true,
+      "small": [],
+      "fixed": [],
+      "errors": [],
+      "external": [
+        "https://muhammadhaseeb.co/favicon.png",
+        "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+      ]
+    }
+  },
+  "links": {
+    "internalChecked": 226,
+    "external": [
+      "mailto:haseeb7665@gmail.com",
+      "https://www.linkedin.com/in/muhammadhaseebsheikh"
+    ]
+  },
+  "keyboard": {
+    "stops": [
+      {
+        "el": "A Skip to content",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Haseeb",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Proof",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Case studies",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Method",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A About",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Contact",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Free diagnostic",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "BUTTON#motionToggle Motion: on",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Get my free diagnostic →",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A Book a call",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A See the proof first",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A healthcare SEO case study",
+        "outline": true,
+        "visible": true
+      },
+      {
+        "el": "A free organic growth diagnostic",
+        "outline": true,
+        "visible": true
+      }
+    ]
+  },
+  "menu": {
+    "open": {
+      "open": true,
+      "expanded": "true",
+      "focus": "Overview"
+    },
+    "closed": {
+      "open": false,
+      "focus": "burger"
+    },
+    "landed": "http://localhost:8765/method.html"
+  },
+  "reducedMotion": {
+    "os": {
+      "rm": true,
+      "label": "Motion: off",
+      "split": 0,
+      "track": false
+    },
+    "afterToggle": {
+      "rm": false,
+      "label": "Motion: on",
+      "pressed": "false"
+    }
+  },
+  "noJs": {
+    "index": {
+      "text": "Your next customers are searching right now. I make sure the",
+      "opacity": "1",
+      "display": "block"
+    },
+    "case-healthcare-seo": {
+      "text": "How a specialty clinic went from page two to page one in six",
+      "opacity": "1",
+      "display": "block"
+    }
+  },
+  "contact": {
+    "book": {
+      "href": "mailto:haseeb7665@gmail.com?subject=Book%20a%20call",
+      "visible": true
+    },
+    "contact": {
+      "forms": 0,
+      "actions": [
+        [
+          "Book a call",
+          "mailto:haseeb7665@gmail.com?subject=Book%20a%20call"
+        ],
+        [
+          "Email",
+          "mailto:haseeb7665@gmail.com"
+        ],
+        [
+          "LinkedIn",
+          "https://www.linkedin.com/in/muhammadhaseebsheikh"
+        ],
+        [
+          "Fastest start",
+          "diagnostic.html"
+        ]
+      ]
+    },
+    "diagnostic": {
+      "forms": 0,
+      "mail": "mailto:haseeb7665@gmail.com?subject=Free%20diagnostic%20request&body=Your%20name%3A%20%0AWebsite%20URL%3A%20%0AWhere%20are%20you%20now%3F%20%0AYour%20biggest%20growth%20challenge%3A%20"
+    }
+  },
+  "cases": {
+    "health": 5,
+    "saas": 3,
+    "noEmptyFutureFilters": true,
+    "expanded": "true"
+  },
+  "motion": {
+    "scene-home-mobile390": {
+      "moved": true,
+      "framesDrawn": 93,
+      "size": [
+        390,
+        503
+      ]
+    },
+    "scene-home-mobile360": {
+      "moved": true,
+      "framesDrawn": 91,
+      "size": [
+        360,
+        470
+      ]
+    },
+    "scene-case-mobile390": {
+      "moved": true,
+      "framesDrawn": 89,
+      "size": [
+        390,
+        503
+      ]
+    },
+    "scene-home-desktop": {
+      "moved": true,
+      "framesDrawn": 77,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    "scene-case-desktop": {
+      "moved": true,
+      "framesDrawn": 82,
+      "size": [
+        1440,
+        900
+      ]
+    },
+    "scene-home-mobile-reduced": {
+      "moved": false,
+      "framesDrawn": 0,
+      "size": [
+        390,
+        503
+      ]
+    },
+    "scene-case-mobile-reduced": {
+      "moved": false,
+      "framesDrawn": 0,
+      "size": [
+        390,
+        503
+      ]
+    }
+  },
+  "story": {
+    "seen": {
+      "context": "1Challenge",
+      "approach": "2Approach",
+      "execution": "3Work",
+      "results": "4Results",
+      "honest": "5Limits"
+    },
+    "jumped": true
+  },
+  "failures": []
+}

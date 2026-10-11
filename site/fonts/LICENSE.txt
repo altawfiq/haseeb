@@ -1,0 +1,3 @@
+Schibsted Grotesk (c) The Schibsted Grotesk Project Authors — SIL Open Font License 1.1
+Newsreader (c) The Newsreader Project Authors — SIL Open Font License 1.1
+Latin subsets as served by Google Fonts. Full licence: https://openfontlicense.org
